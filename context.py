@@ -24,6 +24,11 @@ class QSO(object):
     def __init__(self, callsign=None):
         self.callsign = callsign
         self.info = None
+        if callsign is not None:
+            self.lookup()
+
+    def lookup(self):
+        self.info = lookup_callsign(self.callsign)
 
     def __str__(self):
         return "QSO({}, {})".format(self.callsign, self.info)

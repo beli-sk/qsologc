@@ -18,6 +18,7 @@
 #
 from command_interface import *
 from context import *
+from utils import *
 
 
 class QSOCommand(Command):
