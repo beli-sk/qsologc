@@ -30,6 +30,8 @@ class QSO(object):
 
 
 class Context():
+    """The Context object holds the application context - all in-memory
+    state of the application."""
     def __init__(self):
         self.qsos = {}
         self.current_index = None

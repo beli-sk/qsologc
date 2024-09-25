@@ -32,6 +32,7 @@ class Command(object):
 
 
 class CommandInterface(object):
+    """CLI based user interface running commands working with the context."""
     def __init__(self):
         self.context = None
         self.commands = dict()
